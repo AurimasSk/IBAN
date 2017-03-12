@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+    <groupId>lt.aurimas.webservices</groupId>
+    <artifactId>modules</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  
+  <groupId>lt.aurimas.webservices</groupId>
+  <artifactId>webservice-soap</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>webservice-soap</name>
+  <packaging>war</packaging>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <!-- Versions -->
+    <jaxws.version>2.1.3</jaxws.version>
+  </properties>
+  
+  <dependencies>
+  	<dependency>
+		<groupId>lt.aurimas.webservices</groupId>
+		<artifactId>business-logic</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</dependency>
+	<dependency>
+      <groupId>com.sun.xml.ws</groupId>
+      <artifactId>jaxws-rt</artifactId>
+      <version>${jaxws.version}</version>
+    </dependency>
+  </dependencies>
+</project>
